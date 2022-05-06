@@ -24,3 +24,106 @@ FOREIGN KEY ("user_id")
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1610538915785132655)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dexter@mann-gulgowski.io"], ["name", "Towanda O'Keefe"], ["created_at", "2022-05-06 10:28:32.302162"], ["updated_at", "2022-05-06 10:28:32.302162"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "madalyn@tremblay-feest.biz"], ["name", "Rich Bode Ret."], ["created_at", "2022-05-06 10:31:31.236285"], ["updated_at", "2022-05-06 10:31:31.236285"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (1.7ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["title", "Corporis a consectetur."], ["body", "Est debitis delectus. Itaque voluptas eum. Minima quo at."], ["created_at", "2022-05-06 10:31:31.264611"], ["updated_at", "2022-05-06 10:31:31.264611"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.4ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["title", "Rerum aut maiores."], ["body", "Impedit accusamus omnis. Et non totam. Dolorum perferendis error."], ["created_at", "2022-05-06 10:31:31.270951"], ["updated_at", "2022-05-06 10:31:31.270951"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.4ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["title", "Dicta doloremque iusto."], ["body", "Eos voluptates omnis. Quam et necessitatibus. Harum at sit."], ["created_at", "2022-05-06 10:31:31.275406"], ["updated_at", "2022-05-06 10:31:31.275406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.4ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["title", "Rerum dolores reiciendis."], ["body", "Ut et perferendis. Reiciendis eius quam. Iste temporibus id."], ["created_at", "2022-05-06 10:31:31.279834"], ["updated_at", "2022-05-06 10:31:31.279834"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.4ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["title", "Ut nisi nulla."], ["body", "Vero fugit ad. Alias aut fugit. Dolores ut incidunt."], ["created_at", "2022-05-06 10:31:31.284262"], ["updated_at", "2022-05-06 10:31:31.284262"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "orval@sauer.name"], ["name", "Fr. Ami Morissette"], ["created_at", "2022-05-06 10:31:31.289066"], ["updated_at", "2022-05-06 10:31:31.289066"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.4ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["title", "Aliquid est fuga."], ["body", "At non autem. Reprehenderit quia nostrum. Dolore inventore voluptas."], ["created_at", "2022-05-06 10:31:31.294009"], ["updated_at", "2022-05-06 10:31:31.294009"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["title", "Dicta suscipit impedit."], ["body", "Hic tempora laboriosam. Eum totam velit. Consequatur quaerat et."], ["created_at", "2022-05-06 10:31:31.298818"], ["updated_at", "2022-05-06 10:31:31.298818"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["title", "Harum esse non."], ["body", "Provident placeat id. Minus blanditiis voluptates. Eligendi nemo ea."], ["created_at", "2022-05-06 10:31:31.303903"], ["updated_at", "2022-05-06 10:31:31.303903"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["title", "Sequi incidunt eligendi."], ["body", "Animi id eligendi. Et consequatur ducimus. Aut quia consequatur."], ["created_at", "2022-05-06 10:31:31.308998"], ["updated_at", "2022-05-06 10:31:31.308998"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["title", "Similique ipsam fuga."], ["body", "Ut voluptates consequuntur. Porro nobis exercitationem. Quis quos voluptates."], ["created_at", "2022-05-06 10:31:31.313865"], ["updated_at", "2022-05-06 10:31:31.313865"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "steven@sporer-dietrich.name"], ["name", "Lyle Walsh"], ["created_at", "2022-05-06 10:31:31.319028"], ["updated_at", "2022-05-06 10:31:31.319028"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["title", "Officia hic aut."], ["body", "Enim assumenda ex. Ipsum iusto corporis. Repellendus voluptates qui."], ["created_at", "2022-05-06 10:31:31.324373"], ["updated_at", "2022-05-06 10:31:31.324373"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["title", "Officia asperiores assumenda."], ["body", "Eaque corrupti accusamus. Consequatur pariatur voluptatum. Ex voluptate sint."], ["created_at", "2022-05-06 10:31:31.329664"], ["updated_at", "2022-05-06 10:31:31.329664"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["title", "Esse qui consequatur."], ["body", "Voluptatem quo delectus. Nulla fugiat veritatis. Ipsum mollitia eaque."], ["created_at", "2022-05-06 10:31:31.334786"], ["updated_at", "2022-05-06 10:31:31.334786"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["title", "Necessitatibus quos unde."], ["body", "Est ipsa explicabo. Id molestiae sequi. Quae rerum qui."], ["created_at", "2022-05-06 10:31:31.339894"], ["updated_at", "2022-05-06 10:31:31.339894"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["title", "Unde nihil nisi."], ["body", "Tenetur iste voluptas. Eveniet perspiciatis qui. Adipisci tenetur doloribus."], ["created_at", "2022-05-06 10:31:31.344815"], ["updated_at", "2022-05-06 10:31:31.344815"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "long.brown@kilback.biz"], ["name", "Michael Schamberger"], ["created_at", "2022-05-06 10:31:31.350053"], ["updated_at", "2022-05-06 10:31:31.350053"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["title", "Placeat ab quisquam."], ["body", "Modi officia itaque. Ut rem dolorem. Quis non repellendus."], ["created_at", "2022-05-06 10:31:31.355075"], ["updated_at", "2022-05-06 10:31:31.355075"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["title", "Voluptatem dolorem libero."], ["body", "Vel eos itaque. Nesciunt quam id. Libero neque molestiae."], ["created_at", "2022-05-06 10:31:31.364253"], ["updated_at", "2022-05-06 10:31:31.364253"]]
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["title", "Nam ut eos."], ["body", "Eos perspiciatis aut. Ratione maxime doloribus. Qui deserunt molestias."], ["created_at", "2022-05-06 10:31:31.378013"], ["updated_at", "2022-05-06 10:31:31.378013"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["title", "Veniam eligendi mollitia."], ["body", "Deleniti possimus nihil. Soluta ab aut. Eos quasi non."], ["created_at", "2022-05-06 10:31:31.384553"], ["updated_at", "2022-05-06 10:31:31.384553"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["title", "Praesentium inventore cum."], ["body", "Sit velit quia. Est aut quos. Alias in ducimus."], ["created_at", "2022-05-06 10:31:31.389355"], ["updated_at", "2022-05-06 10:31:31.389355"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "alonzo_nicolas@predovic.com"], ["name", "Trinidad Armstrong"], ["created_at", "2022-05-06 10:31:31.394310"], ["updated_at", "2022-05-06 10:31:31.394310"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["title", "Voluptatem eaque neque."], ["body", "Sint cumque magni. Molestias natus dolorem. Sint mollitia provident."], ["created_at", "2022-05-06 10:31:31.406576"], ["updated_at", "2022-05-06 10:31:31.406576"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["title", "Repellendus voluptas quaerat."], ["body", "Fugiat deserunt amet. Earum amet adipisci. In itaque et."], ["created_at", "2022-05-06 10:31:31.411565"], ["updated_at", "2022-05-06 10:31:31.411565"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["title", "Et consequatur cum."], ["body", "Non molestiae pariatur. Tempora quos occaecati. Incidunt deserunt dolor."], ["created_at", "2022-05-06 10:31:31.416377"], ["updated_at", "2022-05-06 10:31:31.416377"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["title", "Dignissimos placeat impedit."], ["body", "Quos enim libero. Voluptatem eos magnam. Molestiae qui rem."], ["created_at", "2022-05-06 10:31:31.420966"], ["updated_at", "2022-05-06 10:31:31.420966"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSuggestion Create (0.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("user_id", "title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 6], ["title", "Rerum quae molestias."], ["body", "Dolorem ut maxime. Ipsam magni qui. Repudiandae fugiat eveniet."], ["created_at", "2022-05-06 10:31:31.425514"], ["updated_at", "2022-05-06 10:31:31.425514"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "suggestions"[0m
+  [1m[36mSuggestion Load (0.7ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSuggestion Load (0.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "suggestions"."id" FROM "suggestions" WHERE "suggestions"."user_id" = $1[0m  [["user_id", 6]]
