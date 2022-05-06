@@ -127,3 +127,125 @@ FOREIGN KEY ("user_id")
   [1m[36mSuggestion Load (0.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions" WHERE "suggestions"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "suggestions"."id" FROM "suggestions" WHERE "suggestions"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/" for ::1 at 2022-05-06 07:45:26 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/guilherme/.rvm/gems/ruby-2.7.0/gems/railties-6.0.4.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.7.0/gems/railties-6.0.4.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.7ms | Allocations: 402)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2204)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-05-06 07:45:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.4.8) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.8) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+railties (6.0.4.8) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/graphql" for ::1 at 2022-05-06 07:45:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/graphql"):
+  
+actionpack (6.0.4.8) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.8) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+railties (6.0.4.8) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/graphql" for ::1 at 2022-05-06 07:50:09 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/graphql"):
+  
+actionpack (6.0.4.8) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.8) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.8) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.8) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.8) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+railties (6.0.4.8) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/graphiql" for ::1 at 2022-05-06 07:50:31 -0300
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 30.7ms | Allocations: 10013)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 11523)
+
+
+  
+ActionView::Template::Error (couldn't find file 'graphql/rails/application.css'
+Checked in these paths: 
+  /home/guilherme/cursos_projetos_particulares/GraphQL_with_Rails/Customers/app/assets/config
+  /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/assets/javascripts
+  /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/assets/stylesheets
+  /home/guilherme/.rvm/gems/ruby-2.7.0/gems/actioncable-6.0.4.8/app/assets/javascripts
+  /home/guilherme/.rvm/gems/ruby-2.7.0/gems/activestorage-6.0.4.8/app/assets/javascripts
+  /home/guilherme/.rvm/gems/ruby-2.7.0/gems/actionview-6.0.4.8/lib/assets/compiled):
+  
+app/assets/config/manifest.js:1
+Started GET "/graphiql" for ::1 at 2022-05-06 07:51:08 -0300
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"graphql#execute"}
+  Rendering /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.7.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 54.2ms | Allocations: 7067)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms | Allocations: 7362)
+
+
+Started GET "/assets/graphiql/rails/application-5bb68625e0c7ddf3eece980e20001faed96197d338dca5fa33e0f5da8a060deb.css" for ::1 at 2022-05-06 07:51:08 -0300
+Started GET "/assets/graphiql/rails/application-d78230954080343c556e7465ad58ff8802dc2c2455d2e14983801a14c3dd0036.js" for ::1 at 2022-05-06 07:51:08 -0300
+Started POST "/graphql" for ::1 at 2022-05-06 07:51:08 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+Completed 200 OK in 91ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 22391)
+
+
